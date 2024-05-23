@@ -52,7 +52,7 @@
 <template>
     <header class="d-flex justify-content-center align-items-center justify-content-around">
         <div class="logo-cont d-flex justify-content-center">
-            <img class="my-2" src="../assets/img/dc-logo.png" alt="">
+            <img class="my-2" src="../assets/dc-logo.png" alt="">
         </div>
         <div class="links-cont">
             <a class="mx-2" v-for="link in links" :href="link.url">{{ link.text }}</a>

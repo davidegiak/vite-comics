@@ -6,7 +6,7 @@
                     {
                         text: "DIGITAL COMICS",
                         url: "#",
-                        img: ("../assets/img/buy-comics-digital-comics.png")
+                        img: "../assets/buy-comics-digital-comics.png"
                     },
                     {
                         text: "DC MERCHANDISE",
