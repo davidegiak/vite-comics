@@ -45,8 +45,24 @@
                     }
                 ]
             }
+        },
+        methods: {
+            blueBarsFunction() {
+                let bar = document.querySelector(".myBlueLinksBar");
+                let link = document.querySelector("a")
+                if (bar.classList.contains("d-none")) {
+                    bar.classList.replace("d-none", "d-block")
+                    a.classList.add("text-blue")
+                }
+            },
+            blueBarsFunctionLeave() {
+                let bar = document.querySelector(".myBlueLinksBar");
+                if (bar.classList.contains("d-block")) {
+                    bar.classList.replace("d-block", "d-none")
+                }
+            }
         }
-    }
+    } 
 </script>
 
 <template>
@@ -55,8 +71,15 @@
             <div class="logo-cont d-flex justify-content-center">
                 <img class="my-2" src="../../public/dc-logo.png" alt="">
             </div>
-            <div class="links-cont">
-                <a class="mx-2" v-for="link in links" :href="link.url">{{ link.text }}</a>
+            <div class="links-cont d-flex">
+                <ul class="d-flex ">
+                    <li v-for="link, i in links">
+                        <a @mouseover="blueBarsFunction()" @mouseleave="blueBarsFunctionLeave()" class="mx-2 d-flex flex-column" :href="link.url">
+                            {{ link.text }}
+                        </a>
+                        <div class="d-none myBlueLinksBar"></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -65,7 +88,6 @@
 <style scoped>
     header{
         background-color: white;
-        height: 15vh;
     }
     img {
         width: 100%;
@@ -74,4 +96,17 @@
     .logo-cont {
         width: 6rem;
     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .myBlueLinksBar {
+        width: 100%;
+        height: 5px;
+        background-color: #0282f9;
+    }
+    ul {
+        list-style: none;
+    }
+    
 </style>
