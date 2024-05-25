@@ -69,7 +69,7 @@
     <header class="">
         <div class="myContainer d-flex justify-content-center align-items-center justify-content-around">
             <div class="logo-cont d-flex justify-content-center">
-                <img class="my-2" src="../../public/dc-logo.png" alt="">
+                <img class="my-2" src="/dc-logo.png" alt="">
             </div>
             <div class="links-cont d-flex">
                 <ul class="d-flex ">
@@ -88,6 +88,8 @@
 <style scoped>
     header{
         background-color: white;
+        position: fixed;
+        width: 100%;
     }
     img {
         width: 100%;
@@ -108,5 +110,7 @@
     ul {
         list-style: none;
     }
+
+
     
 </style>
