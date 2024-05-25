@@ -119,10 +119,10 @@
                 </div>
             </div>
         </section>
-        <section class="pageFoot">
+        <section class="pageFoot py-3">
             <div class="myContainer d-flex justify-content-between">
-                <div class="btn-cont vertical-align-middle">
-                    <button type="button" class="btn btn-outline-primary mt-4">SIGN-UP NOW!</button>
+                <div class="btn-cont d-flex align-items-center">
+                    <button type="button" class="btn btn-outline-primary">SIGN-UP NOW!</button>
                 </div>
                 <div class="socials-cont d-flex gap-2 justify-content-center align-items-center">
                     <h4 id="followUs">FOLLOW US</h4>

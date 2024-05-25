@@ -90,6 +90,7 @@
         background-color: white;
         position: fixed;
         width: 100%;
+        z-index: 9999;
     }
     img {
         width: 100%;

@@ -12,7 +12,11 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo"></div>
+    <div class="jumbo">
+        <div class="myContainer d-flex align-items-end">
+            <span class="badge text-bg-primary py-2 px-3">CURRIENT SERIES</span>
+        </div>
+    </div>
     <div>
         <ComicsList/>
     </div>
@@ -22,5 +26,12 @@ export default {
 .jumbo {
     background-image: url(/public/jumbotron.jpg);
     height: 20rem;
+    background-size: cover;
+}
+.myContainer{
+    height: 100%;
+}
+span{
+    transform: translateY(10px);
 }
 </style>
